@@ -23,7 +23,7 @@ void InitNotifyIconData(HWND hWnd) {
 	nid.uCallbackMessage = WM_SYSICON;
 
 	nid.hIcon = nid.hIcon = (HICON)LoadImage(NULL, TEXT("C:\\Users\\User\\Downloads\\xterm_color_32x32_22444.ico"), IMAGE_ICON, 32, 32, LR_LOADFROMFILE | LR_SHARED);
-	memcpy(nid.szTip, TEXT("USA"), 2 * sizeof(TCHAR));
+	memcpy(nid.szTip, TEXT("GER"), 2 * sizeof(TCHAR));
 	Shell_NotifyIcon(NIM_ADD, &nid);
 
 
